@@ -1,0 +1,25 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  owner: Bytes! # address
+  spender: Bytes! # address
+}
+
+type leaderEntity @entity {
+  id: ID!
+  minted: BigInt!
+}
+
+type statsEntity @entity {
+  id: ID!
+  burned: BigInt!
+}
+
+type transferEntity @entity {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+  block: BigInt!
+  timestamp: BigInt!
+}

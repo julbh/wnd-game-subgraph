@@ -1,0 +1,16 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  owner: Bytes! # address
+  approved: Bytes! # address
+}
+
+type statsEntity @entity {     # wnd/statsEntities
+  id: ID!
+  wizardMinted: Int!
+  wizardBurned: Int!
+  wizardStolen: Int!
+  dragonMinted: Int!
+  dragonBurned: Int!
+  dragonStolen: Int!
+}

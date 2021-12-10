@@ -1,0 +1,28 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  tokenId: BigInt! # uint256
+  unstaked: Boolean! # bool
+}
+
+type statsEntity @entity {
+  id: ID!
+  dragonStaked: Int!
+  wizardStaked: Int!
+}
+
+type userStatsEntity @entity {
+  id: ID!
+  dragonStaked: [String!]!
+  wizardStaked: [String!]!
+}
+
+type DragonUnStakedEntity @entity {
+  id: ID!
+  tokenIds: [String!]!
+}
+
+type WizardUnStakedEntity @entity {
+  id: ID!
+  tokenIds: [String!]!
+}
